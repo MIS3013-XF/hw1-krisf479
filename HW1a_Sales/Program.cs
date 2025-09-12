@@ -26,8 +26,8 @@ namespace HW1a_Sales
             Console.WriteLine($"What is the price of {itemtype}?");
             itemprice = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine($"\n\tThe subtotal of your purchase is ${numberofitems * itemprice}.");
-            Console.WriteLine($"\tThe sales tax for your purchase is ${(numberofitems * itemprice) * taxamt}.");
-            Console.WriteLine($"\tThe total of your purchase is ${(itemprice*numberofitems) + taxamt*(itemprice*numberofitems)}.");
+            Console.WriteLine($"\tThe sales tax for your purchase is ${(numberofitems * itemprice) * taxamt:C2}.");
+            Console.WriteLine($"\tThe total of your purchase is ${(itemprice*numberofitems) + taxamt*(itemprice*numberofitems):C2}.");
           
 
         }

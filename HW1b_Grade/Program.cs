@@ -36,7 +36,7 @@ namespace HW1b_Grade
             Console.WriteLine("What is your percentage final grade?");
             finalgrade = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine($"{firstname} {lastname} ({studentid}), your final grade is {hwgrade*hww+ participationgrade*pw + quizgrade*qw + midtermgrade*mtw + finalgrade*fgw}%");
+            Console.WriteLine($"{firstname} {lastname} ({studentid}), your final grade is {(hwgrade*hww+ participationgrade*pw + quizgrade*qw + midtermgrade*mtw + finalgrade*fgw)/100:P2}");
 
 
 
